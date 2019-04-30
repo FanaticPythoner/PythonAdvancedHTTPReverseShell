@@ -68,7 +68,7 @@ Here are all the currently available custom commands in this Reverse Shell and t
 
 ### Upload ###
 
-Command to upload a file on the server on the client working directory via HTTP request. The syntax is :
+Command to upload a file on the Attacker Side to the Victim Side current shell working directory. The syntax is :
 - upload::{FILE_TO_UPLOAD_PATH}
 
 #### Example:
