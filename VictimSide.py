@@ -150,7 +150,6 @@ def httpReq(url, data=None, typeReq='POST', returnBytes=False):
     c.setopt(pycurl.FOLLOWLOCATION, 1)
     c.setopt(pycurl.WRITEFUNCTION, buffer.write)
     c.setopt(pycurl.URL,url)
-    c.setopt(pycurl.TIMEOUT, 10)
 
     if typeReq == 'POST':
         c.setopt(pycurl.POST, 1)
