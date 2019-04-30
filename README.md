@@ -1,7 +1,7 @@
 # PythonAdvancedHTTPReverseShell
 Advanced python HTTP reverse shell made for Hacking Competition purpose. I am not responsible of what you do with this tool or any consequence/damage that can occur if you use it for illegal purpose.
 
-This reverse shell works on any network that have the port 80 open. That being said, It can be extremely usefull. It was tested in a closed network, not over the whole internet. However, It will work over the internet, all you have to do is change the variables values of ATTACKER_IP, ATTACKER_PORT (AttackerSide.py) and ATTACKER_IP_URL (VictimSide.py). More details below.
+This reverse shell works on any network that have the port 80 open. That being said, It can be extremely usefull. It was tested in a closed network, not over the whole internet. However, It will work over the internet, all you have to do is change the variables values of "*ATTACKER_IP*" (AttackerSide.py) and "*ATTACKER_IP_URL*" (VictimSide.py). More details below.
 
 ### Language: ### 
 
@@ -37,3 +37,24 @@ This reverse shell works on any network that have the port 80 open. That being s
 - Happy Hacking.
 
 
+# Setting up :
+
+Here is what you need to do to setup your hacking environment beyond installation for both the attacker side and the victim side.
+
+### Attacker Side script ###
+
+For the Attacker Side, it's pretty straight foward: 
+- At the top of the script, change the "*ATTACKER_IP*" variable for your IP address (or Domain name, you know what you have to do)
+- Unless you do some port fowarding and change the default connection port of the Victim Side script and do other manipulations, the variable "*ATTACKER_PORT*" should stay with the value "*80*".
+
+Here is what the top of the script shoud look like on a closed network :
+
+![alt text](https://i.imgur.com/OtStUWN.jpg)
+
+### Victim Side script ###
+Again, I strongly recommand you to learn how and compile the VictimSide.py script with the dependencies before sending it to your victim, otherwhise the victim will need to have python will all the dependencies installed in his/her machine (which is unlikely). Eitherway, you will need to do this crazy hard step before doing anything:
+- At the top of the script, change "*ATTACKER_IP_URL*" by the Domain name / IP address of the attacker. The 'http://' prefix is important.
+
+Here is what the top of the script shoud look like on a closed network :
+
+![alt text](https://i.imgur.com/4G42IUF.jpg)
