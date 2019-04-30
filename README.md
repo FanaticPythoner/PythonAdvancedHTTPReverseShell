@@ -20,10 +20,10 @@ This reverse shell works on any network that have the port 80 open. That being s
   - [*Attacker side script*](https://github.com/FanaticPythoner/PythonAdvancedHTTPReverseShell#attacker-side-script)
   - [*Victim side script*](https://github.com/FanaticPythoner/PythonAdvancedHTTPReverseShell#victim-side-script)
 - [*Commands*](https://github.com/FanaticPythoner/PythonAdvancedHTTPReverseShell#Commands-)
-  - [*Remotely upload a file to the victim side -> upload::{FILE_TO_UPLOAD_PATH}*](https://github.com/FanaticPythoner/PythonAdvancedHTTPReverseShell#upload-command)
-  - [*Change the remote working directory of the victim side -> cd::{PATH}*](https://github.com/FanaticPythoner/PythonAdvancedHTTPReverseShell#cd-command)
-  - [*Download a remote file to the attacker side -> get::{FILE_TO_GET_PATH}*](https://github.com/FanaticPythoner/PythonAdvancedHTTPReverseShell#get-command)
-  - [*Scan the ports of remote machine on the victim side -> scan::{IP_TO_SCAN}::{PORT_1},{PORT_2},{PORT_N}*](https://github.com/FanaticPythoner/PythonAdvancedHTTPReverseShell#scan-command)
+  - [*Remotely upload a file to the victim side -> upload::{FILE_TO_UPLOAD_PATH}*](https://github.com/FanaticPythoner/PythonAdvancedHTTPReverseShell#upload)
+  - [*Change the remote working directory of the victim side -> cd::{PATH}*](https://github.com/FanaticPythoner/PythonAdvancedHTTPReverseShell#cd)
+  - [*Download a remote file to the attacker side -> get::{FILE_TO_GET_PATH}*](https://github.com/FanaticPythoner/PythonAdvancedHTTPReverseShell#get)
+  - [*Scan the ports of remote machine on the victim side -> scan::{IP_TO_SCAN}::{PORT_1},{PORT_2},{PORT_N}*](https://github.com/FanaticPythoner/PythonAdvancedHTTPReverseShell#scan)
   - [*Take a screenshot of the victim desktop -> screens*](https://github.com/FanaticPythoner/PythonAdvancedHTTPReverseShell#screens-command)
   
 # Installation
