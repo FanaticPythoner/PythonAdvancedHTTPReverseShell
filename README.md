@@ -73,4 +73,10 @@ Command to upload a file on the server on the client working directory via HTTP 
 
 #### Example:
 
+Here, I will upload the file "python-3.7.1-installer.exe" located in the "SampleFiles" folder to the victim machine. If it work, you will see a message telling you everything worked. If it failed, it would have also told you :
+
 Attacker Side :
+![alt text](https://i.imgur.com/WSRDQ5Q.jpg)
+
+On the victim side, you can see that the file uploaded successfully :
+![alt text](https://i.imgur.com/UaCknZa.jpg)
