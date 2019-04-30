@@ -66,17 +66,44 @@ Here are all the currently available custom commands in this Reverse Shell and t
 ##### IMPORTANT NOTE: The argument separator of every single custom command is the double double-dot (::).
 ##### OTHER IMPORTANT NOTE: All the standard shell commands of the remote machine will work with this shell, except the command 'CD', because you obviously cannot normally change the working directory of an executing script.
 
-### Upload ###
+## Upload ##
 
 Command to upload a file on the Attacker Side to the Victim Side current shell working directory. The syntax is :
 - upload::{FILE_TO_UPLOAD_PATH}
 
 #### Example:
 
-Here, I will upload the file "python-3.7.1-installer.exe" located in the "SampleFiles" folder to the victim machine. If it work, you will see a message telling you everything worked. If it failed, it would have also told you :
+Here, I will upload the file "python-3.7.1-installer.exe" located in the "SampleFiles" folder to the Victim machine. If it work, you will see a message telling you everything worked. If it failed, it would have also told you :
 
 Attacker Side :
 ![alt text](https://i.imgur.com/WSRDQ5Q.jpg)
 
 On the victim side, you can see that the file uploaded successfully :
 ![alt text](https://i.imgur.com/UaCknZa.jpg)
+
+## CD ##
+
+Command to walk through Victim Side OS. The syntax is :
+- cd::{PATH}
+
+#### Example:
+
+Here, I will change the working directory from the Victim desktop to the current Drive Root. If it work, you will see a message telling you everything worked. If it failed, it would have also told you :
+
+Attacker Side :
+![alt text](https://i.imgur.com/b5dHgjB.jpg)
+
+## Get ##
+
+Command to download a file on the Victim machine to the Attacker machine. The syntax is :
+- get::{FILE_TO_GET_PATH}
+
+#### Example:
+
+Here, I will download the file we uploaded on the Victim side earlier (python-3.7.1-installer.exe) :
+
+Attacker Side :
+![alt text](https://i.imgur.com/iTcWS8t.jpg)
+
+The downloaded file is put in a directory named "files" in the same directory as the Attacker Script file : 
+![alt text](https://i.imgur.com/HFKrEtw.jpg)
