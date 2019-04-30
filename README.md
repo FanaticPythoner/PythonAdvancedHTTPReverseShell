@@ -25,3 +25,15 @@ This reverse shell works on any network that have the port 80 open. That being s
   - [*Download a remote file to the attacker side -> get::{FILE_TO_GET_PATH}*](https://github.com/FanaticPythoner/PythonAdvancedHTTPReverseShell#get-command)
   - [*Scan the ports of remote machine on the victim side -> scan::{IP_TO_SCAN}::{PORT_1},{PORT_2},{PORT_N}*](https://github.com/FanaticPythoner/PythonAdvancedHTTPReverseShell#scan-command)
   - [*Take a screenshot of the victim desktop -> screens*](https://github.com/FanaticPythoner/PythonAdvancedHTTPReverseShell#screens-command)
+  
+# Installation
+
+- Download the repository
+
+- Install the requirements for the attacker side in the requirements_(AttackerSide).txt file (pip install -r requirements_(AttackerSide).txt)
+
+- If you decided not to compile the VictimSide.py script, install the requirements for the victim side on the remote machine with the requirements_(VictimSide).txt file (pip install -r requirements_(VictimSide).txt)
+
+- Happy Hacking.
+
+
