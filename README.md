@@ -40,6 +40,7 @@ This reverse shell works on any network that have the port 80 open. That being s
 # Setting up :
 
 Here is what you need to do to setup your hacking environment beyond installation for both the attacker side and the victim side.
+##### IMPORTANT NOTE: Once you have set up the AttackerSide.py and VictimSide.py scripts, you NEED to start the AttackerSide.py script first, otherwise the reverse shell wont work.
 
 ### Attacker Side script ###
 
@@ -58,3 +59,18 @@ Again, I strongly recommand you to learn how and compile the VictimSide.py scrip
 Here is what the top of the script shoud look like on a closed network :
 
 ![alt text](https://i.imgur.com/4G42IUF.jpg)
+
+# Commands :
+
+Here are all the currently available custom commands in this Reverse Shell and their explanation.
+##### IMPORTANT NOTE: The argument separator of every single custom command is the double double-dot (::).
+##### OTHER IMPORTANT NOTE: All the standard shell commands of the remote machine will work with this shell, except the command 'CD', because you obviously cannot normally change the working directory of an executing script.
+
+### Upload ###
+
+Command to upload a file on the server on the client working directory via HTTP request. The syntax is :
+- upload::{FILE_TO_UPLOAD_PATH}
+
+#### Example:
+
+Attacker Side :
