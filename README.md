@@ -24,7 +24,7 @@ This reverse shell works on any network that have the port 80 open. That being s
   - [*Change the remote working directory of the victim side -> cd::{PATH}*](https://github.com/FanaticPythoner/PythonAdvancedHTTPReverseShell#cd)
   - [*Download a remote file to the attacker side -> get::{FILE_TO_GET_PATH}*](https://github.com/FanaticPythoner/PythonAdvancedHTTPReverseShell#get)
   - [*Scan the ports of remote machine on the victim side -> scan::{IP_TO_SCAN}::{PORT_1},{PORT_2},{PORT_N}*](https://github.com/FanaticPythoner/PythonAdvancedHTTPReverseShell#scan)
-  - [*Take a screenshot of the victim desktop -> screens*](https://github.com/FanaticPythoner/PythonAdvancedHTTPReverseShell#screens-command)
+  - [*Take a screenshot of the victim desktop -> screens*](https://github.com/FanaticPythoner/PythonAdvancedHTTPReverseShell#screens)
   - [*Execute a file on the Victim machine -> exec::{FILE_TO_EXECUTE_PATH}::{FILE_TO_EXECUTE_ARGUMENTS}*](https://github.com/FanaticPythoner/PythonAdvancedHTTPReverseShell#exec)
   
 # Installation
