@@ -135,3 +135,20 @@ Attacker Side :
 
 The screenshot is put in a directory named "files" in the same directory as the Attacker Script file : 
 ![alt text](https://i.imgur.com/38VFHG4.jpg)
+
+## Exec ##
+
+Command to execute a file on the Victim machine. You can specify arguments. The syntax is :
+- exec::{FILE_TO_EXECUTE_PATH}::{FILE_TO_EXECUTE_ARGUMENTS}
+
+#### Example:
+
+Here, I will simply execute the file we previously uploaded on the Victim machine desktop (python-3.7.1-installer.exe). If it work, you will see a message telling you everything worked. If it failed, it would have also told you :
+
+##### IMPORTANT NOTE: Until the remote file you executed get closed, the Attacker Side Server will wait a response from the Victim Side. This can either be a good or bad thing (for example a script you execute remotely, you can tell when it's over), but it is what it is for now. If i see someone complaining about it I will fix it.
+
+Attacker Side :
+![alt text](https://i.imgur.com/lE4pecK.jpg)
+
+On the victim side, you can see that the file executed successfully :
+![alt text](https://i.imgur.com/gMnOyPA.jpg)
