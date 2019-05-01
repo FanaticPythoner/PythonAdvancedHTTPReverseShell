@@ -25,6 +25,7 @@ This reverse shell works on any network that have the port 80 open. That being s
   - [*Download a remote file to the attacker side -> get::{FILE_TO_GET_PATH}*](https://github.com/FanaticPythoner/PythonAdvancedHTTPReverseShell#get)
   - [*Scan the ports of remote machine on the victim side -> scan::{IP_TO_SCAN}::{PORT_1},{PORT_2},{PORT_N}*](https://github.com/FanaticPythoner/PythonAdvancedHTTPReverseShell#scan)
   - [*Take a screenshot of the victim desktop -> screens*](https://github.com/FanaticPythoner/PythonAdvancedHTTPReverseShell#screens-command)
+  - [*Execute a file on the Victim machine -> exec::{FILE_TO_EXECUTE_PATH}::{FILE_TO_EXECUTE_ARGUMENTS}*](https://github.com/FanaticPythoner/PythonAdvancedHTTPReverseShell#exec)
   
 # Installation
 
@@ -119,3 +120,18 @@ Here, I will scan the ports 80, 443 and 22 of the IP address 192.168.51.79. If i
 
 Attacker Side :
 ![alt text](https://i.imgur.com/kCP789B.jpg)
+
+## Screens ##
+
+Command to take a screenshot in the JPEG format of the Victim machine. The syntax is :
+- get::{FILE_TO_GET_PATH}
+
+#### Example:
+
+Here, I will simply take a screenshot of the Victim machine :
+
+Attacker Side :
+![alt text](https://i.imgur.com/C0I4ZNW.jpg)
+
+The screenshot is put in a directory named "files" in the same directory as the Attacker Script file : 
+![alt text](https://i.imgur.com/38VFHG4.jpg)
