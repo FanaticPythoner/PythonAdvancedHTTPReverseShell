@@ -100,10 +100,22 @@ Command to download a file on the Victim machine to the Attacker machine. The sy
 
 #### Example:
 
-Here, I will download the file we uploaded on the Victim side earlier (python-3.7.1-installer.exe) :
+Here, I will download the file we uploaded on the Victim side earlier (python-3.7.1-installer.exe). If it work, you will see a message telling you everything worked. If it failed, it would have also told you :
 
 Attacker Side :
 ![alt text](https://i.imgur.com/iTcWS8t.jpg)
 
 The downloaded file is put in a directory named "files" in the same directory as the Attacker Script file : 
 ![alt text](https://i.imgur.com/HFKrEtw.jpg)
+
+## Scan ##
+
+Command to scan ports of a machine on the Victim network. The syntax is :
+- scan::{IP_TO_SCAN}::{PORT_1},{PORT_2},{PORT_N}
+
+#### Example:
+
+Here, I will scan the ports 80, 443 and 22 of the IP address 192.168.51.79. If it work, you will see a message telling you everything worked. If it failed, it would have also told you :
+
+Attacker Side :
+![alt text](https://i.imgur.com/kCP789B.jpg)
